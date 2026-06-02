@@ -1,7 +1,7 @@
-import re
-
 from playwright.sync_api import Playwright, Page, Expect, expect
 from urllib3.util import wait
+import re
+
 
 def test_completed_todo(page:Page):
     page.goto("https://todomvc.com/examples/react/dist/")
